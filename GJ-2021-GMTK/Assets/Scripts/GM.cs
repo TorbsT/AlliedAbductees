@@ -6,7 +6,7 @@ public class GM : MonoBehaviour
 {
     private static GM gm;
 
-    [SerializeField] public BGUFO bgufo;
+    [SerializeField] public List<BGUFO> bgufos;
     [SerializeField] public TMPro.TextMeshProUGUI gameOverScoreTxt;
     [SerializeField] public GameObject gameOverScreen;
     [SerializeField] public GameObject introScreen;

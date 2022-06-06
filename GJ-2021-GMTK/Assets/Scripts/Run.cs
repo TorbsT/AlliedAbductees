@@ -92,7 +92,10 @@ public class Run
     }
     public void fixedUpdate()
     {
-        gm.bgufo.manualFixedUpdate();
+        foreach (BGUFO bgufo in gm.bgufos)
+        {
+            bgufo.manualFixedUpdate();
+        }
         setScore();
         float camRadiusX = 10f;
         x += speed * Time.fixedDeltaTime*(1+avgXDistFromCam()*cameraInfluence/camRadiusX);
